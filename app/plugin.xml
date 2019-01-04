@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IFile"
+            id="esda2.contribution1">
+         <menu
+               label="ArchiDES"
+               path="additions"
+               id="archides.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               label="Examine"
+               class="archides.popup.actions.NewAction"
+               menubarPath="archides.menu1/group1"
+               enablesFor="1"
+               id="archides.newAction">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>
